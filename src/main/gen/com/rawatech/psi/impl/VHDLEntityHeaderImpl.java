@@ -26,16 +26,4 @@ public class VHDLEntityHeaderImpl extends ASTWrapperPsiElement implements VHDLEn
     else super.accept(visitor);
   }
 
-  @Override
-  @Nullable
-  public VHDLGenericClause getGenericClause() {
-    return findChildByClass(VHDLGenericClause.class);
-  }
-
-  @Override
-  @Nullable
-  public VHDLPortClause getPortClause() {
-    return findChildByClass(VHDLPortClause.class);
-  }
-
 }

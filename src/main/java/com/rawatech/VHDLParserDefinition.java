@@ -5,7 +5,6 @@ import com.intellij.lexer.Lexer;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.*;
 import com.intellij.psi.tree.*;
-import com.rawatech.parser.VHDLParser;
 import com.rawatech.psi.VHDLFile;
 import com.rawatech.psi.VHDLTypes;
 import org.jetbrains.annotations.NotNull;

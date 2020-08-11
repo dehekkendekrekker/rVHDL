@@ -8,6 +8,15 @@ import com.intellij.psi.PsiElement;
 public interface VHDLEntityDeclaration extends PsiElement {
 
   @NotNull
+  VHDLEntityDeclarativePart getEntityDeclarativePart();
+
+  @NotNull
   VHDLEntityHeader getEntityHeader();
+
+  @Nullable
+  VHDLEntityStatementPart getEntityStatementPart();
+
+  @NotNull
+  VHDLIdentifier getIdentifier();
 
 }

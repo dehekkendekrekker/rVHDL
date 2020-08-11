@@ -7,4 +7,7 @@ import com.intellij.psi.PsiElement;
 
 public interface VHDLGenericClause extends PsiElement {
 
+  @NotNull
+  VHDLGenericList getGenericList();
+
 }

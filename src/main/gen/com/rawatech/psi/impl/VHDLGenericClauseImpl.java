@@ -26,4 +26,10 @@ public class VHDLGenericClauseImpl extends ASTWrapperPsiElement implements VHDLG
     else super.accept(visitor);
   }
 
+  @Override
+  @NotNull
+  public VHDLGenericList getGenericList() {
+    return findNotNullChildByClass(VHDLGenericList.class);
+  }
+
 }

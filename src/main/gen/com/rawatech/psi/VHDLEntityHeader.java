@@ -7,10 +7,4 @@ import com.intellij.psi.PsiElement;
 
 public interface VHDLEntityHeader extends PsiElement {
 
-  @Nullable
-  VHDLGenericClause getGenericClause();
-
-  @Nullable
-  VHDLPortClause getPortClause();
-
 }

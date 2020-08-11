@@ -28,8 +28,26 @@ public class VHDLEntityDeclarationImpl extends ASTWrapperPsiElement implements V
 
   @Override
   @NotNull
+  public VHDLEntityDeclarativePart getEntityDeclarativePart() {
+    return findNotNullChildByClass(VHDLEntityDeclarativePart.class);
+  }
+
+  @Override
+  @NotNull
   public VHDLEntityHeader getEntityHeader() {
     return findNotNullChildByClass(VHDLEntityHeader.class);
+  }
+
+  @Override
+  @Nullable
+  public VHDLEntityStatementPart getEntityStatementPart() {
+    return findChildByClass(VHDLEntityStatementPart.class);
+  }
+
+  @Override
+  @NotNull
+  public VHDLIdentifier getIdentifier() {
+    return findNotNullChildByClass(VHDLIdentifier.class);
   }
 
 }

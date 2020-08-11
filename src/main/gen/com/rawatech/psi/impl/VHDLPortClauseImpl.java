@@ -26,4 +26,10 @@ public class VHDLPortClauseImpl extends ASTWrapperPsiElement implements VHDLPort
     else super.accept(visitor);
   }
 
+  @Override
+  @NotNull
+  public VHDLPortList getPortList() {
+    return findNotNullChildByClass(VHDLPortList.class);
+  }
+
 }

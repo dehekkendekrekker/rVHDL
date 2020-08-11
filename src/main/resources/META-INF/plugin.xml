@@ -15,8 +15,9 @@
         <fileType name="VHDL File" implementationClass="com.rawatech.VHDLFileType"
                   fieldName="INSTANCE" language="VHDL" extensions="vhdl"/>
         <lang.parserDefinition language="VHDL" implementationClass="com.rawatech.VHDLParserDefinition"/>
-<!--        <lang.syntaxHighlighterFactory language="VHDL"-->
-<!--                                       implementationClass="com.rawatech.VHDLSyntaxHighlighterFactory"/>-->
+        <lang.syntaxHighlighterFactory language="VHDL"
+                                       implementationClass="com.rawatech.VHDLSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="com.rawatech.VHDLColorSettingsPage"/>
     </extensions>
 
     <actions>
