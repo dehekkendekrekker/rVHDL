@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>com.rawatech.rVHDL</id>
+    <name>rVHDL</name>
+    <vendor email="support@rawatech.com" url="https://rawatech.com">RawaTech Cybernetics</vendor>
+
+    <description><![CDATA[
+    VHDL plugin for jetbrains IDE's
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="VHDL File" implementationClass="com.rawatech.VHDLFileType"
+                  fieldName="INSTANCE" language="VHDL" extensions="vhdl"/>
+        <lang.parserDefinition language="VHDL" implementationClass="com.rawatech.VHDLParserDefinition"/>
+<!--        <lang.syntaxHighlighterFactory language="VHDL"-->
+<!--                                       implementationClass="com.rawatech.VHDLSyntaxHighlighterFactory"/>-->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
